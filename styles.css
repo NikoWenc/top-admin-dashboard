@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid: repeat(5, 1fr) / repeat(5, 1fr);
+    grid-template-areas: 
+        "nav header header header header"
+        "nav main   main   main   main  "
+        "nav main   main   main   main  "
+        "nav main   main   main   main  "
+        "nav main   main   main   main  ";
+}
+
+nav {
+    border: 1px solid red;
+    grid-area: nav;
+}
+
+header {
+    border: 1px solid red;
+    grid-area: header;
+}
+
+main {
+    border: 1px solid red;
+    grid-area: main;
+}
