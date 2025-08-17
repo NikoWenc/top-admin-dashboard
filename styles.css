@@ -56,7 +56,9 @@ nav > .nav > a {
     color: inherit;
 }
 
-nav > .nav > svg {
+nav > .nav > svg,
+.search-bar > svg,
+.notif > svg {
     fill: currentColor;
     width: 1.7rem;
     height: 1.7rem;
@@ -68,6 +70,29 @@ nav > .nav > svg {
 header {
     border: 1px solid red;
     grid-area: header;
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.search-bar, .notif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 70px 0 70px;
+    border: 1px solid red;
+    flex-grow: 1;
+    gap: 1.5rem;
+}
+
+.search-bar > #search-input {
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(206, 214, 215);
+    flex-grow: 1;
+    height: 35px;
 }
 
 /* MAIN STYLES */
